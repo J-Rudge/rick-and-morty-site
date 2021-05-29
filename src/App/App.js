@@ -1,15 +1,24 @@
-import React, { useState } from "react";
-import Page from "../components/Page.js";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Nav from "../Navigation/Nav";
+import Home from "../Home/Home";
 import "./App.css";
 
 function App() {
-  const [page, setPage] = useState("Characters");
+  return <Router>
+    <Nav></Nav>
 
-  function handleChange(page) {
-    setPage(page);
-  }
+    <Switch>
+      <Route exact path="/">
+        <Home/>
+      </Route>
+    </Switch>
 
-  return <Page page={page} onChange={handleChange} />;
+  </Router>
 }
 
 export default App;
