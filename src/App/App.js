@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Page from "./components/Page";
-import "./CSS/App.css";
+import Page from "../components/Page.js";
+import "./App.css";
 
 function App() {
   const [page, setPage] = useState("Characters");
