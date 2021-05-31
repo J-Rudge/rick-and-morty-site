@@ -1,5 +1,10 @@
 .character-list {
-  display: inline;
-  margin: auto;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 20%;
+}
+
+.character-card {
+  flex: 1 0 auto;
 }

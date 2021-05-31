@@ -6,9 +6,9 @@ function Character(props) {
   }
 
   return (
-    <div>
+    <div className="character-card" onClick={handleClick}>
       <img src={props.image} width="150" alt={props.name} />
-      <p onClick={handleClick}>{props.name}</p>
+      <p>{props.name}</p>
     </div>
   );
 }
