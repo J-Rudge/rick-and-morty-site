@@ -1,4 +1,6 @@
 .container {
-  margin: auto;
-  width: 50%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #533a7b;
 }

@@ -14,9 +14,11 @@ function Characters() {
         .then((character) => {
           let tempCharacters = [];
           var i;
-          for (i = 0; i < 5; i++) {
+          for (i = 0; i < 6; i++) {
             tempCharacters.push(character["results"][i]);
           }
+          console.log(character);
+
           setCharacters(tempCharacters);
         });
     }
