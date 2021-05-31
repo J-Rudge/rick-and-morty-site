@@ -9,7 +9,7 @@ import Home from "../Home/Home";
 import "./App.css";
 
 function App() {
-  return <Router>
+  return <div><Router>
     <Nav></Nav>
 
     <Switch>
@@ -19,6 +19,8 @@ function App() {
     </Switch>
 
   </Router>
+  <header></header>
+  </div>
 }
 
 export default App;
