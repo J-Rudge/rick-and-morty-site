@@ -9,7 +9,7 @@
 .character-card {
   display: flex;
   flex: 1 0 auto;
-  margin: 10px auto;
+  margin: 10px 10px;
   background-color: #6969b3;
   border-radius: 5px;
   width: 600px;
