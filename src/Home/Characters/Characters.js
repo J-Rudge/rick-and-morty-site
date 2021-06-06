@@ -32,7 +32,7 @@ function Characters() {
         return (
           <Character
             key={character.id}
-            id={character.id}
+            id={character.id-1}
             character={character}
           />
         );

@@ -7,16 +7,16 @@ function Character(props) {
   function handleMouseOver() {
     let elements = document.getElementsByClassName('character-name');
 
-    if(!elements[props.id-1].classList.contains('mouse-over')) {
-      elements[props.id-1].classList.add('mouse-over');
+    if(!elements[props.id].classList.contains('mouse-over')) {
+      elements[props.id].classList.add('mouse-over');
     }
   }
 
   function handleMouseOut() {
     let elements = document.getElementsByClassName('character-name');
 
-    if(elements[props.id-1].classList.contains('mouse-over')) {
-      elements[props.id-1].classList.remove('mouse-over');
+    if(elements[props.id].classList.contains('mouse-over')) {
+      elements[props.id].classList.remove('mouse-over');
     }
   }
 
