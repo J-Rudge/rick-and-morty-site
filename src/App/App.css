@@ -1,3 +1,10 @@
+/*
+Color Scheme
+Dark Purple   -	#1C141F
+Purple	      -	#291F3D
+Dark Blue     -	#4E4466
+*/
+
 html,
 body {
   color: white;
@@ -12,7 +19,7 @@ p {
 }
 
 header {
-  background-color: black;
+  background-color: #1c141f;
   width: 100%;
   height: 500px;
 }

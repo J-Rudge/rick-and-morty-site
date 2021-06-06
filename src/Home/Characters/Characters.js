@@ -30,6 +30,10 @@ function Characters() {
     console.log(id);
   }
 
+  function handleMouseOver(id) {
+    console.log(id);
+  }
+
   return (
     <div className="character-list">
       {characters.map((character) => {
@@ -40,6 +44,7 @@ function Characters() {
             name={character.name}
             image={character.image}
             onClick={handleClick}
+            onMouseOver={handleMouseOver}
           />
         );
       })}
