@@ -33,8 +33,7 @@ function Characters() {
           <Character
             key={character.id}
             id={character.id}
-            name={character.name}
-            image={character.image}
+            character={character}
           />
         );
       })}
