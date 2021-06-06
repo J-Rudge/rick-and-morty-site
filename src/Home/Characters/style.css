@@ -32,3 +32,7 @@
   flex: 3 1 0%;
   margin: 0 20px;
 }
+
+.mouse-over {
+  color: #77d902;
+}

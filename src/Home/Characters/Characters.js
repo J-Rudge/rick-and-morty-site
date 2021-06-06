@@ -26,14 +26,6 @@ function Characters() {
     retrieveCharacters();
   }, []);
 
-  function handleClick(id) {
-    console.log(id);
-  }
-
-  function handleMouseOver(id) {
-    console.log(id);
-  }
-
   return (
     <div className="character-list">
       {characters.map((character) => {
@@ -43,8 +35,6 @@ function Characters() {
             id={character.id}
             name={character.name}
             image={character.image}
-            onClick={handleClick}
-            onMouseOver={handleMouseOver}
           />
         );
       })}

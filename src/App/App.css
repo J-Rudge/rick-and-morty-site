@@ -1,8 +1,10 @@
 /*
 Color Scheme
-Dark Purple   -	#1C141F
-Purple	      -	#291F3D
-Dark Blue     -	#4E4466
+Dark Purple		  -	#1C141F
+Purple		    	-	#291F3D
+Lighter Purple	-	#4E4466
+
+Mouse Over Text Color	- #77D902
 */
 
 html,
@@ -14,12 +16,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-p {
-  /* font-family: "Open Sans", sans-serif; */
-}
-
-header {
+footer {
+  display: flex;
   background-color: #1c141f;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
 }
