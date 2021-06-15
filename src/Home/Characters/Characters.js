@@ -7,22 +7,23 @@ function Characters() {
 
   useEffect(() => {
     async function retrieveCharacters() {
-      fetch("https://rickandmortyapi.com/api/character")
-        .then((res) => {
-          return res.json();
-        })
-        .then((character) => {
-          let tempCharacters = [];
-          var i;
-          for (i = 0; i < 6; i++) {
-            tempCharacters.push(character["results"][i]);
-          }
-          console.log(character);
+      let response = await fetch(`https://rickandmortyapi.com/api/character`);
+      response = await response.json();
+      let pageCount = response["info"]["pages"];
 
-          setCharacters(tempCharacters);
-        });
+      let tempCharacters = [];
+      for(let i = 1; i < pageCount; i++) {
+        let response = await fetch(`https://rickandmortyapi.com/api/character?page=${i}`);
+        let character = await response.json();
+
+        for(let j = 0; j < character["results"].length; j++) {
+          tempCharacters.push(character["results"][j]);
+        }
+      }
+
+      setCharacters(tempCharacters);
     }
-
+    
     retrieveCharacters();
   }, []);
 
