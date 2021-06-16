@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Character from "./Character";
+import CharacterCard from "./CharacterCard";
 import "./style.css";
 
 function Characters() {
@@ -47,7 +47,7 @@ function Characters() {
     <div className="character-list">
       {characters.map((character, index) => {
         return (
-          <Character
+          <CharacterCard
             key={character.id}
             id={character.id-1}
             index={index}

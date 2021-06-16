@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-function Character(props) {  
+function CharacterCard(props) {  
   function handleClick() {
   }
 
@@ -37,4 +37,4 @@ function Character(props) {
   );
 }
 
-export default Character;
+export default CharacterCard;
