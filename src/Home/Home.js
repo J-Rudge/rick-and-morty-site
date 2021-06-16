@@ -3,7 +3,7 @@ import Characters from "./Characters/Characters";
 import "./style.css";
 
 function Home() {
-  return <div className="character-container"><Characters/></div>;
+  return <Characters/>;
 }
 
 export default Home;
