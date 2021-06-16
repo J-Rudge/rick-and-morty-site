@@ -1,3 +1,8 @@
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
 .character-list {
   display: flex;
   flex-wrap: wrap;
@@ -55,4 +60,34 @@
   100% {
     opacity: 1;
   }
+}
+
+.arrow {
+  border: 3px solid white;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-bottom: transparent;
+  border-right: transparent;
+  top: 50%;
+  margin: 0 15px;
+}
+
+.left {
+  transform: rotateZ(-45deg);
+}
+
+.left:hover {
+  transition: 0.2s;
+  border-color: #77d902;
+}
+
+.right {
+  right: 0;
+  transform: rotateZ(135deg);
+}
+
+.right:hover {
+  transition: 0.2s;
+  border-color: #77d902;
 }

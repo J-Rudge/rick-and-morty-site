@@ -44,6 +44,9 @@ function Characters() {
   }, []);
 
   return (
+    <div className="carousel">
+      <i class="arrow left"></i>
+      <i class="arrow right"></i>
     <div className="character-list">
       {characters.map((character, index) => {
         return (
@@ -55,6 +58,7 @@ function Characters() {
           />
         );
       })}
+    </div>
     </div>
   );
 }
